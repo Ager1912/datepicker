@@ -734,6 +734,8 @@ export class DatepickerComponent implements ControlValueAccessor, OnInit {
     }
 
     onClick(): void {
+        this._focus = 3;
+        this.createCalendar();
         this.opened = !this.opened;
     }
 
